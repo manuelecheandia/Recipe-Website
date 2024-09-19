@@ -19,6 +19,7 @@ function SearchBar() {
 
   return (
     <div>
+        <div>Probando</div>
       <input
         type="text"
         value={query}
