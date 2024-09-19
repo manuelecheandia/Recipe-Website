@@ -1,27 +1,131 @@
-.app{
+.app {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 40px 24px;
+  margin: 0 auto;
+  max-width: 80%;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
 }
 
-.app__searchForm{
-  margin-top: 18px;
+h1 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
-.app__input{
+
+/* Search Form */
+
+.app__searchForm {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.app__input, .app__cuisineSelect {
   padding: 6px 16px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+  font-size: 15px;
   min-width: 200px;
   max-width: 100vw;
+}
+
+.app__submit {
+  background-color: #0056b3;
+  color: white;
+  border: 2px solid #0056b3;
+  padding:6px 16px;
+  font-size: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.app__submit:hover {
+  background-color: #004494;
+}
+
+.app__cuisineSelect {
+  background-color: white;
+  cursor: pointer;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.app__cuisineSelect:focus {
+  border-color: #007BFF; 
+  outline: none; 
+}
+
+/* Recipes */
+.app__recipes {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.app__recipes div {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+}
+
+.recipe__image{
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.recipe__name{
+  max-width: 250px;
+  text-align: center;
+  margin: 12px 0px;
   font-size: 15px;
 }
 
-.app__submit{
-  padding: 6px 16px;
-  font-size: 15px;
-  margin-left: 6px;
-  background-color: blue;
-  border: 1px solid blue;
-  border-radius: 4px;
-  color: white;
+/* Pagination */
+
+.pagination-info, .pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  margin: 0 5px;
+  border: none;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pagination button:hover {
+  background-color: #e2e2e2;
+}
+
+.pagination button:disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .app__input, .app__cuisineSelect {
+    width: calc(100% - 22px); 
+  }
+
+  .app__submit {
+    width: 100%;
+    margin-top: 10px; 
+  }
+
+  .app__searchForm {
+    flex-direction: column;
+  }
 }

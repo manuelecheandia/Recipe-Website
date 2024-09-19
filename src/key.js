@@ -1,1 +1,1 @@
-const API_KEY = "3beb197c9690416e8301673e7a94b78d";
+const API_KEY = process.env.SPOONACULAR_API_KEY;
