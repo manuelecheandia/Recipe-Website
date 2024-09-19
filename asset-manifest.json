@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/recipe-website/static/css/main.be5f4e85.chunk.css",
-    "main.js": "/recipe-website/static/js/main.84765914.chunk.js",
-    "main.js.map": "/recipe-website/static/js/main.84765914.chunk.js.map",
+    "main.js": "/recipe-website/static/js/main.9a872afb.chunk.js",
+    "main.js.map": "/recipe-website/static/js/main.9a872afb.chunk.js.map",
     "runtime-main.js": "/recipe-website/static/js/runtime-main.9e251d2e.js",
     "runtime-main.js.map": "/recipe-website/static/js/runtime-main.9e251d2e.js.map",
-    "static/js/2.20096420.chunk.js": "/recipe-website/static/js/2.20096420.chunk.js",
-    "static/js/2.20096420.chunk.js.map": "/recipe-website/static/js/2.20096420.chunk.js.map",
+    "static/js/2.d024f263.chunk.js": "/recipe-website/static/js/2.d024f263.chunk.js",
+    "static/js/2.d024f263.chunk.js.map": "/recipe-website/static/js/2.d024f263.chunk.js.map",
     "static/js/3.082f9c00.chunk.js": "/recipe-website/static/js/3.082f9c00.chunk.js",
     "static/js/3.082f9c00.chunk.js.map": "/recipe-website/static/js/3.082f9c00.chunk.js.map",
     "index.html": "/recipe-website/index.html",
-    "precache-manifest.f27045b8d97f3aa179761af6c3adc066.js": "/recipe-website/precache-manifest.f27045b8d97f3aa179761af6c3adc066.js",
+    "precache-manifest.75fb679f4ca3c9ffffa24faccc477da6.js": "/recipe-website/precache-manifest.75fb679f4ca3c9ffffa24faccc477da6.js",
     "service-worker.js": "/recipe-website/service-worker.js",
     "static/css/main.be5f4e85.chunk.css.map": "/recipe-website/static/css/main.be5f4e85.chunk.css.map",
-    "static/js/2.20096420.chunk.js.LICENSE.txt": "/recipe-website/static/js/2.20096420.chunk.js.LICENSE.txt"
+    "static/js/2.d024f263.chunk.js.LICENSE.txt": "/recipe-website/static/js/2.d024f263.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.9e251d2e.js",
-    "static/js/2.20096420.chunk.js",
+    "static/js/2.d024f263.chunk.js",
     "static/css/main.be5f4e85.chunk.css",
-    "static/js/main.84765914.chunk.js"
+    "static/js/main.9a872afb.chunk.js"
   ]
 }
