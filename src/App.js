@@ -3,6 +3,7 @@ import "./key";
 import "./App.css";
 import React, { useState, useEffect } from 'react';
 import Axios from "axios";
+import RecipeDetail from './components/RecipeDetail';
 
 function App() {
   const [query, setQuery] = useState("");
@@ -82,6 +83,7 @@ const onSubmit = (e) => {
 
 
   return (
+    <Router>
     <div className="app">
       <h1>Recipe Website</h1>
       <form className="app__searchForm" onSubmit={onSubmit}>
@@ -110,15 +112,14 @@ const onSubmit = (e) => {
       {error && <p>{error}</p>}
       <div className="app__recipes">
         {recipes.map((recipe) => (
-          <div key={recipe.id}>
-            
+          <Link to={`/recipe/${recipe.id}`} key={recipe.id}>   
             <img
               className="recipe__image"
               src={recipe.image}
               alt={recipe.title}
             />
             <h6 className="recipe__name">{recipe.title}</h6>
-          </div>
+          </Link>
         ))}
       </div>
       <div className="pagination-info">
@@ -141,7 +142,12 @@ const onSubmit = (e) => {
           Next
         </button>
       </div>
+      <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="/recipe/:id" element={<RecipeDetail />} />
+        </Routes>
     </div>
+    </Router>
   );
 }
 
